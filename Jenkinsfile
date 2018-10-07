@@ -1,4 +1,4 @@
-martand {
+node {
     stage('build'){
         echo "building"
     }
@@ -6,7 +6,7 @@ martand {
 stage('Deploy approval'){
     input "Deploy to prod?"
 }
-martand {
+node {
     stage('deploy to prod'){
         echo "deploying"
     }
